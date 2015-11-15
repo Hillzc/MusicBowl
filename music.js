@@ -1,4 +1,4 @@
-var songs = ["song1.mp3,"song2.mp3"]; //For testing's sake, these are just hardcoded in and I have the .mp3 files in the same directory. The goal in the future is to grab songs from Youtube or Spotify, especially because of Youtube's "recommended videos" feature and Spotify's ability to grab more songs from the same artist
+var songs = ["song1.mp3","song2.mp3"]; //For testing's sake, these are just hardcoded in and I have the .mp3 files in the same directory. The goal in the future is to grab songs from Youtube or Spotify, especially because of Youtube's "recommended videos" feature and Spotify's ability to grab more songs from the same artist
 var randSong = Math.floor(Math.random()*songs.length);
 console.log(songs[randSong]);
 var audio = new Audio(songs[randSong]);
