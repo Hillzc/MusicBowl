@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<p>Click the button to begin.</p>
+<button onclick="playSong()">Play</button>
+<button onclick="stopSong()">Pause</button>
+<button onclick="newSong()">Next</button>
+
+<p></p>
+
+What is the song's name?<br>
+<input type="text" name ="inputform" id="guess" value="" onchange="checkGuess();">
+<input type="submit" value="Submit" onclick="checkGuess();">
+<br>
+
+<button onclick="revealName()">I give up.</button>
+<p id="giveUp"></p>
+
+<p>Total Correct:</p>
+<p id="tc"></p>
+
+<p>Consecutive Correct:</p>
+<p id="cc"></p>
+
+<button onclick="resetScore()">Reset</button>
+
+
+<!-- <audio controls>
+  <source src="coda.mp3" type="audio/mpeg">
+Your browser does not support the audio element.
+</audio>-->
+
+</body>
+</html>
+
+
+<script type="text/javascript" src="music.js"></script>
